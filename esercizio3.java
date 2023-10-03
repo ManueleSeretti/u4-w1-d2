@@ -8,14 +8,15 @@ public class esercizio3 {
         suddividiStringa(str);
     }
     public static void suddividiStringa(String str){
-
-        for(int i=0;i<str.length();i++){
+        int i=0;
+        while(i<str.length()){
 
             String carattere = String.valueOf(str.charAt(i));
 
             if(carattere.equals("q")){
                 break;
-            }else  System.out.println(carattere+",");
+            }else  {System.out.println(carattere+",");
+            i++;}
 
         }
     }
